@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
         findViewById(R.id.tv_weather).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getWeather();
+                testQuestion();
             }
         });
 
@@ -36,21 +36,21 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Type.testkey="9c50c7766e008585";
-                getWeather();
+                testQuestion();
             }
         });
 
         tvcontent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getWeather();
+                testQuestion();
             }
         });
 
         tvnoIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getWeather();
+                testQuestion();
             }
         });
 
@@ -58,13 +58,13 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Type.testkey="123";
-                getWeather();
+                testQuestion();
             }
         });
     }
 
 
-    void getWeather(){
+    void testQuestion(){
 
         new TestModels().test(new CallBack() {
             @Override
